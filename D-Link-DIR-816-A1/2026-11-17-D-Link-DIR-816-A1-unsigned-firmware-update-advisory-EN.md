@@ -189,11 +189,11 @@ clean-restore transcripts telnet-transcript-final-stock.txt.)
 
 Primary finding (conservative — assumes valid admin credentials are a prerequisite):
 
-`CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H` = **6.9 Medium**
+`CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H` = **6.8 Medium**
 
 Real-world vector given factory-default `Admin`/empty credentials and the process-global login state:
 
-`CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H` = **8.3 High**
+`CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H` = **8.0 High**
 
 Exposure (A) standalone (default credentials → telnet root, AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H) = **8.8 High**.
 Both scores fail to capture the persistence dimension (survives reboot; read-only rootfs prevents in-band removal).
